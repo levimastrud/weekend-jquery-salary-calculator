@@ -10,7 +10,9 @@
     <title>Salary Calculator</title>
 </head>
 <body>
+    <header>
     <h1>Salary Calculator</h1>
+    </header>
     <h3>Add Employee</h3>
     <div class="inputs">
         <input id = 'firstName' placeholder="First Name">
@@ -18,9 +20,10 @@
         <input id = 'employeeID' placeholder="ID">
         <input id = 'employeeTitle' placeholder="Title">
         <input id = 'annualSalary' placeholder="Annual Salary">
+        <button id = 'submit'>Submit</button>
     </div>
-    <button id = 'submit'>Submit</button>
-    <table>
+    <br>
+    <table class="employee-table">
         <thead>
             <tr>
                 <th>First Name</th>
@@ -30,7 +33,7 @@
                 <th>Annual Salary</th>
             </tr>
         </thead>
-        <tbody id="employee-table">
+        <tbody id="employee-body">
         </tbody>
     </table>
 </body>
