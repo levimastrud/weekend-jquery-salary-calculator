@@ -1,11 +1,13 @@
 body {
-    font-family:Arial, Helvetica, sans-serif ;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 header {
     text-align: center;
     background-color:bisque;
     height: 100px;
+    font-size: larger;
+    vertical-align: auto;
 }
 .inputs {
     text-align: center;
@@ -14,4 +16,29 @@ header {
 .employee-table {
     text-align: center;
     width: 100%;
+    border-collapse: collapse;
+}
+thead tr {
+    background-color: bisque;
+    height: 50px;
+    width: 100%;
+    font-size: larger;
+}
+#employee-body tr:nth-child(even) {
+    background-color: rgb(219, 219, 219);
+}
+
+#employee-body tr:nth-child(odd) {
+}
+
+.totalMonthly {
+    color: green;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.overBudget {
+    color: red;
+    text-align: right;
+    margin-right: 30px;
 }

@@ -17,9 +17,9 @@
     <div class="inputs">
         <input id = 'firstName' placeholder="First Name">
         <input id = 'lastName' placeholder="Last Name">
-        <input id = 'employeeID' placeholder="ID">
+        <input id = 'employeeID' maxlength = '5' placeholder="ID">
         <input id = 'employeeTitle' placeholder="Title">
-        <input id = 'annualSalary' placeholder="Annual Salary">
+        <input id = 'annualSalary' type = "number" placeholder="Annual Salary">
         <button id = 'submit'>Submit</button>
     </div>
     <br>
@@ -31,10 +31,45 @@
                 <th>ID</th>
                 <th>Title</th>
                 <th>Annual Salary</th>
+                <th></th>
             </tr>
         </thead>
+        <br>
         <tbody id="employee-body">
+            <tr>
+                <td>Jessica</td>
+                <td>Leskow</td>
+                <td>45678</td>
+                <td>Consultation Consultant</td>
+                <td>$28,000</td>
+                <td><button class = "deleteButton">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Dean</td>
+                <td>Sime</td>
+                <td>71036</td>
+                <td>Sandwich Technician</td>
+                <td>$30,500</td>
+                <td><button class = "deleteButton">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Max</td>
+                <td>Evenson</td>
+                <td>29643</td>
+                <td>Grave Digger</td>
+                <td>$12,080</td>
+                <td><button class = "deleteButton">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Jada</td>
+                <td>Marshall</td>
+                <td>69549</td>
+                <td>Sewage Expert</td>
+                <td>$53,900</td>
+                <td><button class = "deleteButton">Delete</button></td>
+            </tr>
         </tbody>
     </table>
+    <h2 class="totalMonthly">Total Monthly: $10,373.33</h2>
 </body>
 </html>
