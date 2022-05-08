@@ -28,7 +28,6 @@ function submitButton () {
     //Changes color of total if it exceeds set amount
 
     if (monthlyTotal > Number(20000)) {
-        console.log('hi');
         $('.totalMonthly').addClass('overBudget');
         $('.totalMonthly').removeClass('totalMonthly');
     }
@@ -60,7 +59,4 @@ function submitButton () {
 function deleteButton (event) {
     let deleted = $(event.target);
     deleted.closest('tr').remove();
-    if (deleted.hasClass('annualSalary')) {
-        console.log('hi')
-    }
 }
