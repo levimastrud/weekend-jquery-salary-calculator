@@ -43,7 +43,7 @@ function submitButton () {
     
     //Appending to the DOM
 
-    $('#employee-body').append(`<tr><td>${firstName}</td><td>${lastName}</td><td>${employeeID}</td><td>${employeeTitle}</td><td>${annualSalary}</td><td><button class = "deleteButton">Delete</button></td></tr>`)
+    $('#employee-body').append(`<tr><td>${firstName}</td><td>${lastName}</td><td>${employeeID}</td><td>${employeeTitle}</td><td>$${annualSalary}</td><td><button class = "deleteButton">Delete</button></td></tr>`)
 
     //Clearing values
 
